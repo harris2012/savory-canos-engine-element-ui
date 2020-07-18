@@ -1,0 +1,49 @@
+        //暂时移除
+        //private void Page(GenerateResult generateResult)
+        //{
+        //    if (pageList == null || pageList.Count == 0)
+        //    {
+        //        return;
+        //    }
+
+        //    foreach (var page in pageList)
+        //    {
+        //        switch (page.PageType)
+        //        {
+        //            case MetaPageTypeName.Standard:
+        //                {
+        //                    StringBuilder builder = new StringBuilder();
+
+        //                    VueCodeFileEngine vueCodeEngine = new VueCodeFileEngine();
+
+        //                    vueCodeEngine.GenerateCodeFile(page.VuePageBuilder, new StringWriter(builder));
+
+        //                    generateResult.WriteToFile(Path.Combine(path.SrcPages, $"{page.Name}.vue"), builder.ToString());
+        //                }
+        //                break;
+        //            case MetaPageTypeName.Tab:
+        //                {
+        //                    //generateResult.WriteToFile(Path.Combine(path.SrcPages, $"{page.Name}.vue"), new TabPageVueTemplate
+        //                    //{
+        //                    //    TabItemList = page.VuePageTabList
+        //                    //}.TransformText());
+        //                }
+        //                break;
+        //            default:
+        //                break;
+        //        }
+        //    }
+        //}
+
+            ////pages
+            //switch (param.TargetProjectType)
+            //{
+            //    case MetaProjectTypeName.ElementUI:
+            //    case MetaProjectTypeName.DotnetCoreElementUI:
+            //        SubjectPages(generateResult);
+            //        //暂时移除
+            //        //Page(generateResult);
+            //        break;
+            //    default:
+            //        break;
+            //}

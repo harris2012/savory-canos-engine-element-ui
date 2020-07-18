@@ -1,0 +1,63 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net452;netstandard2.0;netstandard2.1</TargetFrameworks>
+    <AssemblyName>Savory.Canos.Engine.ElementUI.Resources</AssemblyName>
+    <RootNamespace>Savory.Canos.Engine.ElementUI.Resources</RootNamespace>
+    <Version>1.0.14</Version>
+    <Authors>harriszhang@live.cn</Authors>
+    <Company>harriszhang@live.cn</Company>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <DocumentationFile>bin\$(Configuration)\Savory.Canos.Engine.ElementUI.Resources.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="files\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="files\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Savory.Canos.Resource" Version="1.1.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="UseElementUIResources.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>UseElementUIResources.txt</LastGenOutput>
+    </None>
+    <None Update="UseElementUIResources.txt">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>UseElementUIResources.tt</DependentUpon>
+    </None>
+    <None Update="ElementUIResourceKeys.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ElementUIResourceKeys.cs</LastGenOutput>
+    </None>
+    <None Update="ElementUIResourcePaths.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ElementUIResourcePaths.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="ElementUIResourceKeys.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ElementUIResourceKeys.tt</DependentUpon>
+    </Compile>
+    <Compile Update="ElementUIResourcePaths.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ElementUIResourcePaths.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,39 @@
+{
+  "name": "{{savory-canos-vuetify-component}}",
+  "version": "1.0.10",
+  "lockfileVersion": 1,
+  "requires": true,
+  "dependencies": {
+    "savory-canos-vuetify-component": {
+      "version": "1.0.10",
+      "resolved": "https://package.savory.cn/repository/savory-npm/savory-canos-vuetify-component/-/savory-canos-vuetify-component-1.0.10.tgz",
+      "integrity": "sha512-OK1NGbnIGJ7Q6pXRqSnEfAZpQJutoWX+zc1uJ11aWkDS0KvxEdj/nxOcz1h0WqTXeGRfOo0bQWOBgwL9vpiIVw==",
+      "requires": {
+        "vue": "2.6.10",
+        "vue-router": "3.1.5",
+        "vuedraggable": "2.23.2",
+        "vuetify": "2.1.11"
+      },
+      "dependencies": {
+        "vue-router": {
+          "version": "3.1.5",
+          "resolved": "https://package.savory.cn/repository/savory-npm/vue-router/-/vue-router-3.1.5.tgz",
+          "integrity": "sha1-/ym4oeEwbFJrUtTcBTIQnxbEEjE="
+        }
+      }
+    },
+    "sortablejs": {
+      "version": "1.10.1",
+      "resolved": "https://package.savory.cn/repository/savory-npm/sortablejs/-/sortablejs-1.10.1.tgz",
+      "integrity": "sha1-PVKwD4cb4A8A+E2Zpg0SC/Pf5Sw="
+    },
+    "vuedraggable": {
+      "version": "2.23.2",
+      "resolved": "https://package.savory.cn/repository/savory-npm/vuedraggable/-/vuedraggable-2.23.2.tgz",
+      "integrity": "sha1-DZXX/fTwL1Z1Wiazydylx8qc+nI=",
+      "requires": {
+        "sortablejs": "1.10.1"
+      }
+    },
+  }
+}

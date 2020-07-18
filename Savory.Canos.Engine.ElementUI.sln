@@ -1,0 +1,37 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29905.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Savory.Canos.Engine.ElementUI", "Savory.Canos.Engine.ElementUI\Savory.Canos.Engine.ElementUI.csproj", "{7CFA6182-661F-4446-981E-37ECCC7215D2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Savory.Canos.Engine.ElementUI.Resources", "Savory.Canos.Engine.ElementUI.Resources\Savory.Canos.Engine.ElementUI.Resources.csproj", "{813FE495-964E-489A-9755-FA9742BDE8D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Savory.Canos.Manager.ElementUI", "Savory.Canos.Manager.ElementUI\Savory.Canos.Manager.ElementUI.csproj", "{25C083F9-1379-4536-8359-43EF222F42AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7CFA6182-661F-4446-981E-37ECCC7215D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CFA6182-661F-4446-981E-37ECCC7215D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CFA6182-661F-4446-981E-37ECCC7215D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CFA6182-661F-4446-981E-37ECCC7215D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{813FE495-964E-489A-9755-FA9742BDE8D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{813FE495-964E-489A-9755-FA9742BDE8D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{813FE495-964E-489A-9755-FA9742BDE8D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{813FE495-964E-489A-9755-FA9742BDE8D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25C083F9-1379-4536-8359-43EF222F42AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25C083F9-1379-4536-8359-43EF222F42AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25C083F9-1379-4536-8359-43EF222F42AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25C083F9-1379-4536-8359-43EF222F42AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {144B9FD5-7FFF-4966-B73B-8DCD8678FF8C}
+	EndGlobalSection
+EndGlobal

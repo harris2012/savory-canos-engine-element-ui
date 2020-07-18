@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net452;netstandard2.0;netstandard2.1</TargetFrameworks>
+    <AssemblyName>Savory.Canos.Engine.ElementUI</AssemblyName>
+    <RootNamespace>Savory.Canos.Engine.ElementUI</RootNamespace>
+    <Version>1.0.14</Version>
+    <Authors>harriszhang@live.cn</Authors>
+    <Company>harriszhang@live.cn</Company>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <DocumentationFile>bin\$(Configuration)\Savory.Canos.Engine.ElementUI.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="3.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Savory.Canos.Engine" Version="1.1.5" />
+    <PackageReference Include="Savory.Canos.Template.Vue" Version="3.1.1" />
+    <PackageReference Include="Savory.CodeDom.Js" Version="1.6.17" />
+    <PackageReference Include="Savory.CodeDom.Tag.Vue.ElementUI" Version="1.2.13" />
+    <PackageReference Include="Savory.CodeDom.Vue.Engine" Version="1.1.11" />
+    <PackageReference Include="Savory.Validation" Version="2.1.0" />
+  </ItemGroup>
+
+</Project>
