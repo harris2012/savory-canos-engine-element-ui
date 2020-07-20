@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.IO;
 
 namespace Savory.Canos.Engine.ElementUI.Resources
@@ -35,11 +35,6 @@ namespace Savory.Canos.Engine.ElementUI.Resources
         public static string _default_conf => Path.Combine("default.conf");
 
         /// <summary>
-        /// \package-lock-json-savory-canos-vuetify-component.txt
-        /// </summary>
-        public static string _package_lock_json_savory_canos_vuetify_component_txt => Path.Combine("package-lock-json-savory-canos-vuetify-component.txt");
-
-        /// <summary>
         /// \package-lock.json.txt
         /// </summary>
         public static string _package_lock_json_txt => Path.Combine("package-lock.json.txt");
@@ -58,11 +53,6 @@ namespace Savory.Canos.Engine.ElementUI.Resources
         /// \README.md
         /// </summary>
         public static string _readme_md => Path.Combine("README.md");
-
-        /// <summary>
-        /// \vue.config.js
-        /// </summary>
-        public static string _vue_config_js => Path.Combine("vue.config.js");
 
         /// <summary>
         /// \public\favicon.ico
@@ -140,6 +130,16 @@ namespace Savory.Canos.Engine.ElementUI.Resources
         public static string _public_img_icons_safari_pinned_tab_svg => Path.Combine("public", "img", "icons", "safari-pinned-tab.svg");
 
         /// <summary>
+        /// \src\App.vue
+        /// </summary>
+        public static string _src_app_vue => Path.Combine("src", "App.vue");
+
+        /// <summary>
+        /// \src\main.js
+        /// </summary>
+        public static string _src_main_js => Path.Combine("src", "main.js");
+
+        /// <summary>
         /// \src\registerServiceWorker.js
         /// </summary>
         public static string _src_registerserviceworker_js => Path.Combine("src", "registerServiceWorker.js");
@@ -150,19 +150,24 @@ namespace Savory.Canos.Engine.ElementUI.Resources
         public static string _src_assets_logo_png => Path.Combine("src", "assets", "logo.png");
 
         /// <summary>
-        /// \src\assets\logo.svg
+        /// \src\components\HelloWorld.vue
         /// </summary>
-        public static string _src_assets_logo_svg => Path.Combine("src", "assets", "logo.svg");
+        public static string _src_components_helloworld_vue => Path.Combine("src", "components", "HelloWorld.vue");
 
         /// <summary>
-        /// \src\plugins\vuetify.js
+        /// \src\router\index.js
         /// </summary>
-        public static string _src_plugins_vuetify_js => Path.Combine("src", "plugins", "vuetify.js");
+        public static string _src_router_index_js => Path.Combine("src", "router", "index.js");
 
         /// <summary>
-        /// \src\styles\vuetify-extended.css
+        /// \src\views\About.vue
         /// </summary>
-        public static string _src_styles_vuetify_extended_css => Path.Combine("src", "styles", "vuetify-extended.css");
+        public static string _src_views_about_vue => Path.Combine("src", "views", "About.vue");
+
+        /// <summary>
+        /// \src\views\Home.vue
+        /// </summary>
+        public static string _src_views_home_vue => Path.Combine("src", "views", "Home.vue");
     }
 }
 
