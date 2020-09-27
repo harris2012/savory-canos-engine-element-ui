@@ -1,10 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFrameworks>net452;netstandard2.0;netstandard2.1</TargetFrameworks>
     <AssemblyName>Savory.Canos.Engine.ElementUI.Resources</AssemblyName>
     <RootNamespace>Savory.Canos.Engine.ElementUI.Resources</RootNamespace>
-    <Version>1.0.14</Version>
+    <Version>1.1.0</Version>
     <Authors>harriszhang@live.cn</Authors>
     <Company>harriszhang@live.cn</Company>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Savory.Canos.Resource" Version="1.1.5" />
+    <PackageReference Include="Savory.Canos.Resource" Version="1.1.10" />
   </ItemGroup>
 
   <ItemGroup>
