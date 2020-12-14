@@ -50,7 +50,7 @@ namespace Savory.Canos.Engine.ElementUI.Src.Components
             }
         }
 
-        protected static void BuildProperties(VFormComponent formBuilder, Subject subject)
+        protected static void BuildProperties(ElFormComponent formBuilder, Subject subject)
         {
             foreach (var property in subject.PropertyMap.Values)
             {
@@ -90,16 +90,16 @@ namespace Savory.Canos.Engine.ElementUI.Src.Components
             }
         }
 
-        protected static void BuildGeneralComponent(VFormComponent formBuilder, Property property, GeneralComponent generalComponent)
+        protected static void BuildGeneralComponent(ElFormComponent formBuilder, Property property, GeneralComponent generalComponent)
         {
             formBuilder.AddChild<Component>(generalComponent.Name)
                 .AddProperty(generalComponent.SyncProperty, $"item.{property.Name.ToLowerCamelCase()}");
         }
 
-        protected static void BuildCheckbox(VFormComponent formBuilder, Property property)
+        protected static void BuildCheckbox(ElFormComponent formBuilder, Property property)
         {
-            var builder = formBuilder.AddChild<VCheckboxComponent>()
-                .Model($"item.{property.Name.ToLowerCamelCase()}")
+            var builder = formBuilder.AddChild<ElCheckboxComponent>()
+                .VModel($"item.{property.Name.ToLowerCamelCase()}")
                 .Label(property.DisplayName);
 
             //if (property.WithRules)
@@ -113,10 +113,10 @@ namespace Savory.Canos.Engine.ElementUI.Src.Components
             }
         }
 
-        protected static void BuildSelect(VFormComponent formBuilder, Property property)
+        protected static void BuildSelect(ElFormComponent formBuilder, Property property)
         {
-            var builder = formBuilder.AddChild<VSelectComponent>()
-                  .Model($"item.{property.Name.ToLowerCamelCase()}")
+            var builder = formBuilder.AddChild<ElSelectComponent>()
+                  .VModel($"item.{property.Name.ToLowerCamelCase()}")
                   ._Options($"option.{property.Name.ToLowerCamelCase()}")
                   .Label(property.DisplayName)
                   .Required();
@@ -147,7 +147,7 @@ namespace Savory.Canos.Engine.ElementUI.Src.Components
             }
         }
 
-        protected static void BuildNumber(VFormComponent formBuilder, Property property)
+        protected static void BuildNumber(ElFormComponent formBuilder, Property property)
         {
             var builder = formBuilder.AddChild<VTextFieldComponent>()
                 .Model($"item.{property.Name.ToLowerCamelCase()}", VModelType.Number)
@@ -164,7 +164,7 @@ namespace Savory.Canos.Engine.ElementUI.Src.Components
             }
         }
 
-        protected static void BuildText(VFormComponent formBuilder, Property property)
+        protected static void BuildText(ElFormComponent formBuilder, Property property)
         {
             var builder = formBuilder.AddChild<VTextFieldComponent>()
              .Model($"item.{property.Name.ToLowerCamelCase()}")

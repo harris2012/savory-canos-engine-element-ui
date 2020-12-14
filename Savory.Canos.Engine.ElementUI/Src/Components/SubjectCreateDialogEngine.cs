@@ -1,10 +1,10 @@
 using Savory.Canos.Template;
-using Savory.Canos.Template.Vue;
 using Savory.CodeDom.Js;
 using Savory.CodeDom.Tag;
 using Savory.CodeDom.Tag.Vue;
 using Savory.CodeDom.Tag.Vue.ElementUI;
 using Savory.CodeDom.Vue;
+using Savory.Language.Vue;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,38 +30,7 @@ namespace Savory.Canos.Engine.ElementUI.Src.Components
 
         private Component PrepareComponent()
         {
-            var vDialogComponent = new VDialogComponent().MaxWidth(1000).Scrollable().Model("opened").Persistent("formExecuting");
-
-            var vCardComponent = vDialogComponent.AddChild<VCardComponent>();
-            vCardComponent.AddChild<VCardTitleComponent>().SetContent("新增");
-            vCardComponent.AddChild<VDividerComponent>();
-
-            var subjectCreateComponent = vCardComponent.AddChild<VCardTextComponent>().AddProperty("style", "max-height:500px;")
-                .AddChild<Component>($"{this.Subject.Name.ToLowerCamelCase()}CreateComponent");
-            subjectCreateComponent.AddProperty(":formExecuting.sync", "formExecuting");
-            subjectCreateComponent.AddProperty(":formExecuted.sync", "formExecuted");
-            subjectCreateComponent.AddProperty(":formValid.sync", "formValid");
-            subjectCreateComponent.AddProperty(":formReseting", "formReseting");
-
-            if (this.Subject.ParentList != null && this.Subject.ParentList.Count > 0)
-            {
-                foreach (var parent in this.Subject.ParentList)
-                {
-                    subjectCreateComponent.AddProperty($":{parent.PrimaryPropertyFullName().ToLowerCamelCase()}", $"_{parent.PrimaryPropertyFullName().ToLowerCamelCase()}");
-                }
-                subjectCreateComponent.VIf(string.Join(" && ", this.Subject.ParentList.Select(v => v.PrimaryPropertyFullName().ToLowerCamelCase())));
-            }
-
-            vCardComponent.AddChild<VDividerComponent>();
-
-            var vCardActionsComponent = vCardComponent.AddChild<VCardActionsComponent>();
-            vCardActionsComponent.AddChild<VSpacerComponent>();
-            {
-                var vBtnComponent = vCardActionsComponent.AddChild<VBtnComponent>().AddAttribute("outlined").Color("primary").SetContent("保存");
-                vBtnComponent.AddProperty("@click", "start()");
-                vBtnComponent.AddProperty(":disabled", "!formValid");
-                vBtnComponent.AddProperty(":loading", "formExecuting");
-            }
+            var vDialogComponent = new Component();
 
             return vDialogComponent;
         }

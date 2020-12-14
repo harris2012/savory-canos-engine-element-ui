@@ -1,5 +1,4 @@
 using Savory.Canos.Template;
-using Savory.Canos.Template.Vue;
 using Savory.CodeDom.Js;
 using Savory.CodeDom.Tag;
 using Savory.CodeDom.Tag.Vue;
@@ -27,7 +26,7 @@ namespace Savory.Canos.Engine.ElementUI.Src.Components
 
         private Component PrepareComponent()
         {
-            VFormComponent formComponent = new VFormComponent();
+            ElFormComponent formComponent = new ElFormComponent();
 
             formComponent.Model("formValid").Ref("form").AddCssClass("px-3").AddCssClass("white");
 

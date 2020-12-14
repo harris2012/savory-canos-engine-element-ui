@@ -1,5 +1,4 @@
 using Savory.Canos.Template;
-using Savory.Canos.Template.Vue;
 using Savory.CodeDom.Js;
 using Savory.CodeDom.Tag;
 using Savory.CodeDom.Tag.Vue;

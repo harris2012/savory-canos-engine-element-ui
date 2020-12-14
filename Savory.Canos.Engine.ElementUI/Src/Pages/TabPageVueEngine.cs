@@ -1,4 +1,3 @@
-using Savory.Canos.Template.Vue;
 using Savory.CodeDom.Vue;
 using System;
 using System.Collections.Generic;
